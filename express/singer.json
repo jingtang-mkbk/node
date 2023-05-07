@@ -1,0 +1,25 @@
+{
+  "singers": [
+    {
+      "singger_name": "杰伦",
+      "singer_pic": "https://y.gtimg.cn/music/photo_new/T001R150x150M0000025NhlN2yWrP4.webp",
+      "other_name": "Jay Chou",
+      "singer_id": 4558,
+      "id": "1"
+    },
+    {
+      "singger_name": "林俊杰",
+      "singer_pic": "https://y.gtimg.cn/music/photo_new/T001R150x150M000001BLpXF2DyJe2.webp",
+      "other_name": "JJ Lin",
+      "singer_id": 4286,
+      "id": "2"
+    },
+    {
+      "singger_name": "邓紫棋",
+      "singer_pic": "https://y.gtimg.cn/music/photo_new/T001R150x150M000001fNHEf1SFEFN.webp",
+      "other_name": "Gloria Tang",
+      "singer_id": 13948,
+      "id": "3"
+    }
+  ]
+}
