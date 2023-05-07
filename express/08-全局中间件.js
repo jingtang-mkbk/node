@@ -21,8 +21,6 @@ app.use(recordMiddleware);
 
 app.get('/home', (req, res)=>{
 
-  
-
   res.send('home');
 });
 
