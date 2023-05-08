@@ -1,15 +1,9 @@
 const express = require('express');
+const router = require('./13-router/index')
 
 const app = express();
 
-
-app.get('/home', (req, res)=>{
-  res.send('home');
-});
-
-app.get('/search', (req, res)=>{
-  res.send('search');
-});
+app.use(router);
 
 app.get('/admin', (req, res)=>{
   // 判断URL中是否code === 521
