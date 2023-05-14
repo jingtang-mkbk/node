@@ -24,52 +24,32 @@ mongoose.connection.once('open', ()=>{
   // 创建模型对象  对文档操作的封装对象
   let BookModel = mongoose.model('novels', BookSchema);
 
-  // 新增
-  BookModel.create([
-    {
-      name: '西游记',
-      author: '吴承恩',
-      price: 19.9,
-      is_hot: true,
-    },
-    {
-      name: '红楼梦',
-      author: '曹雪芹',
-      price: 29.9,
-      is_hot: true,
-    },
-    {
-      name: '三国演义',
-      author: '罗贯中',
-      price: 9.9,
-      is_hot: true,
-    },
-    {
-      name: '大撒大撒',
-      author: '大撒旦',
-      price: 19.9,
-      is_hot: false,
-    },
-    {
-      name: '就',
-      author: '看',
-      price: 19.9,
-      is_hot: false,
-    },
-    {
-      name: '地方',
-      author: '看',
-      price: 19.9,
-      is_hot: false,
-    },
-    {
-      name: '好地方',
-      author: '就',
-      price: 19.9,
-      is_hot: false,
-    },
-  ]).then((data)=>{
-    console.log(data);
+  // // 获取单条
+  // BookModel.findOne({name: '大撒大撒'}).then(res => {
+  //   console.log(res)
+  // }).catch(err => {
+  //   console.log(err)
+  // })
+
+  // // id获取
+  // BookModel.findById('6460ab66f114064ad0c3d87b').then(res => {
+  //   console.log(res)
+  // }).catch(err => {
+  //   console.log(err)
+  // })
+
+  // 批量获取
+  // BookModel.find({author: '余华'}).then(res => {
+  //   console.log(res)
+  // }).catch(err => {
+  //   console.log(err)
+  // })
+
+  // 获取所有
+  BookModel.find().then(res => {
+    console.log(res)
+  }).catch(err => {
+    console.log(err)
   })
 });
 
